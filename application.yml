@@ -4,21 +4,15 @@ eureka:
   
   client:
     service-url:
-      defaultZone:${EUREKA_DEFAULT_ZONE:http://localhost:8761/eureka}
+      defaultZone: ${EUREKA_DEFAULT_ZONE:http://localhost:8761/eureka}
 
 management:
   endpoints:
     web:
       exposure:
-        include:health,info
+        include: health,info
 
 #This is name of Services
-product:
-  service:
-    id:PRODUCT-SERVICE
-inventory:
-  service:
-    id:INVENTORY-SERVICE
-cart-order:
-  service:
-    id:CART-ORDER-SERVICE
+PRODUCT_SERVICE_ID: lb://PRODUCT-SERVICE
+INVENTORY_SERVICE_ID: lb://INVENTORY-SERVICE
+CART_ORDER_SERVICE_ID: lb://CART-ORDER-SERVICE
