@@ -10,7 +10,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
+        include: "*"
 
 #This is name of Services
 PRODUCT_SERVICE_ID: lb://PRODUCT-SERVICE
