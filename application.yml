@@ -20,7 +20,7 @@ CART_ORDER_SERVICE_ID: lb://CART-ORDER-SERVICE
 
 spring:
   rabbitmq:
-    host: mybroker.com
+    host: localhost
     port: 5672
-    username: user
-    password: secret
+    username: guest
+    password: guest
