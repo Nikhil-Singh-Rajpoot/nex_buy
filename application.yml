@@ -16,3 +16,11 @@ management:
 PRODUCT_SERVICE_ID: lb://PRODUCT-SERVICE
 INVENTORY_SERVICE_ID: lb://INVENTORY-SERVICE
 CART_ORDER_SERVICE_ID: lb://CART-ORDER-SERVICE
+
+
+spring:
+  rabbitmq:
+    host: mybroker.com
+    port: 5672
+    username: user
+    password: secret
